@@ -4,7 +4,7 @@
 }
 
 .usersList {
-    width: 71.5%;
+    width: 960px;
     display: flex;
     flex-flow: row wrap;
     margin: auto;
@@ -25,3 +25,29 @@ p {
     font-size: 12px;
 
 }
+
+.name {
+    font-weight: 700;
+}
+
+.applyFilters,
+.filterGender,
+.filterNationality {
+    border: 1px solid #dbdada;
+    width: 100px;
+    border-radius: 0;
+    margin: 5px;
+}
+
+.filterGender,
+.applyFilters {
+    height: 20px;
+}
+
+form {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+
