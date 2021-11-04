@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.usersList {
+    width: 71.5%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+.wrapper_user {
+    border: 2px solid #dbdada;
+    padding: 5px;
+    margin: 10px auto ;
+}
+
+img {
+    width: 160px;
+    height: 160px;
+}
+
+p {
+    font-size: 12px;
+
+}
