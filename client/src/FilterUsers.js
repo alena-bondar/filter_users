@@ -18,16 +18,16 @@ export default function FilterUsers(props) {
         <form onSubmit={applyFilters}>
             <select name="gender" className="filterGender">
                 {gender.map(item => {
-                    return <option value={item}>{item}</option>
+                    return <option value={item} key={item}>{item}</option>
                 })}
             </select>
             <select name="nationality" className="filterNationality" size="4" multiple>
                 <option value="All">All</option>
                 {nationalities .map(item => {
-                    return <option value={item}>{item}</option>
+                    return <option value={item} key={item}>{item}</option>
                 })}
             </select>
-            <button className="applyFilters">Apply filters</button>
+            <button type="submit" className="applyFilters">Apply filters</button>
         </form>
     )
 }
