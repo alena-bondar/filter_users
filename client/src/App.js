@@ -1,22 +1,21 @@
 import React from 'react';
-import UsersList from './UsersList';
-import FilterUsers from './FilterUsers';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+import Home from './Home';
 import './index.css';
-import {useState} from "react";
 
 export default function App() {
-
-    const [filter, setFilter] = useState({});
-
     return (
-        <div>
-            <div className="filterUsers">
-                <FilterUsers setFilter={setFilter} />
-            </div>
-            <div className="usersList">
-                <UsersList filter={filter} />
-            </div>
-        </div>
+        <Router>
+            <Switch>
+                <Route path="/">
+                    <Home />
+                </Route>
+            </Switch>
+        </Router>
     )
 }
 
