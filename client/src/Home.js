@@ -6,14 +6,13 @@ import { useState } from "react";
 
 export default function Home() {
   const [filter, setFilter] = useState({});
-
   return (
     <div>
       <div className="filterUsers">
         <FilterUsers setFilter={setFilter} />
       </div>
       <div className="usersList">
-        <UsersList />
+        <UsersList filter={filter} />
       </div>
     </div>
   );
